@@ -13,6 +13,20 @@
     <!-- tailwind css cdn with daisyUI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize script  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary: '#FFDC26',
+                secondary:'#FFF9F4'
+              }
+            }
+          }
+        }
+      </script>
     <style>
         .sora{
             font-family: "Sora", serif;
@@ -22,7 +36,50 @@
         }
     </style>
 </head>
-<body>
-    
+<body class="">
+    <!-- header section  -->
+     <header>
+        <!-- navbar section  -->
+        <div class="bg-secondary">
+            <div class="max-w-screen-xl mx-auto px-5 lg:px-0">
+                <div class="navbar p-0">
+                    <div class="navbar-start">
+                      <div class="flex items-center gap-3">
+                        <img src="./c1-assets/logo-header.png" alt="">
+                        <a class="text-2xl p-0 adlam">Browse<span class="text-primary">4</span>Pets</a>
+                      </div>
+                    </div>
+                    <div class="navbar-center hidden lg:flex sora">
+                      <ul class="menu menu-horizontal text-lg">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end sora">
+                        <!-- login and register  -->
+                     <div class="space-x-3 items-center hidden lg:flex ">
+                        <i class="fa-regular fa-bell text-2xl cursor-pointer"></i>
+                        <i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer"></i>
+                        <a class="px-4 py-2 rounded-lg border border-primary cursor-pointer  duration-300 hover:bg-primary">Login</a>
+                        <a class="px-4 py-2 bg-primary rounded-lg transition duration-300   cursor-pointer">Register</a>
+                     </div>
+                     <!-- menu bar  -->
+                      <div>
+                        <i class="fa-solid fa-bars text-2xl lg:hidden flex cursor-pointer"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+     </header>
+     <!-- main section  -->
+      <main>
+
+      </main>
+      <!-- footer section  -->
+       <footer>
+
+       </footer>
 </body>
 </html>
